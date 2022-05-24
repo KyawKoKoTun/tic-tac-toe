@@ -42,9 +42,9 @@ class App:
             ) or (self.b1.activated == self.b5.activated and self.b5.activated  == self.b9.activated
             ) or (self.b3.activated == self.b5.activated and self.b5.activated  == self.b7.activated):
                 if self.mode:
-                    messagebox.showinfo(title='Tic-Tac-Toe', message='Player 1 win!')
-                else:
                     messagebox.showinfo(title='Tic-Tac-Toe', message='Player 2 win!')
+                else:
+                    messagebox.showinfo(title='Tic-Tac-Toe', message='Player 1 win!')
                 self.restart()
             a = []
             for grid in self.grids:
